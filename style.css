@@ -119,9 +119,6 @@
 
 }
 
-
-
-
 /* box5 */
 
 
@@ -162,28 +159,6 @@ span {
     align-self: flex-end;
 }
 
-@media(max-width:450px){
-    .nav-returns, .nav-location, .nav-language {
-        display: none;
-    }
-
-    .navbar{
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .nav-search{
-        width: 100%;
-    }
-
-    .nav-search{   
-        order: 1;
-    }
-
-    .nav-signin{
-        margin-left: 70px;
-    }
-}
 
 
 /* navbar complete */
@@ -212,7 +187,8 @@ span {
     width: 70%;
     font-size: 0.8rem;
 }
-.panel-options p{
+
+.panel-options p {
     margin-left: 15px;
 }
 
@@ -221,22 +197,12 @@ span {
     font-weight: 700;
 }
 
-@media(max-width:450px){
-    .panel-deals , .panel-register, .panel-service, .panel-all{
-        display: none;
-    }
 
-    .panel-options {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-}
 /* hero-section */
 
 .hero-section {
     background-image: url("Assets/hero_image.jpg");
-    
+
     background-size: cover;
     height: 350px;
     display: flex;
@@ -259,12 +225,6 @@ span {
 .hero-msg a {
     text-decoration: none;
     color: #2162a1;
-}
-
-@media(max-width:450px){
-    .hero-section{
-        background-position: center;
-    }
 }
 
 /* shop section */
@@ -352,7 +312,7 @@ footer {
     margin: 40px;
 }
 
-.footer-panel2 ul a:hover{
+.footer-panel2 ul a:hover {
     text-decoration: underline;
 }
 
@@ -372,20 +332,34 @@ footer {
 
 /* foot - panel 3 */
 
-.footer-panel3{
+.foot-logo {
+    height: 50px;
+    width: 100px;
+
+}
+
+.logo {
+    background-image: url("Assets/amazon_logo.png");
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+}
+
+.footer-panel3 {
     height: 70px;
-    background-color:#232f3e ;
+    background-color: #232f3e;
     border-top: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.panel3-ops{
+.panel3-ops {
     display: flex;
     color: #dddddd;
 }
-.foot{
+
+.foot {
     border: 1px solid white;
     border-radius: 3px;
     margin: 5px;
@@ -397,13 +371,13 @@ footer {
     align-items: center;
 }
 
-.panel3-lang{
-    margin-left:80px
+.panel3-lang {
+    margin-left: 80px
 }
 
 /* panel - 4 */
 
-.footer-panel4{
+.footer-panel4 {
     background-color: #131a22;
     display: flex;
     flex-direction: column;
@@ -412,17 +386,143 @@ footer {
     height: 80px;
     font-size: 0.8rem;
     color: #dddddd;
-    
+
 }
 
-.legal-pages a{
+.legal-pages a {
     text-decoration: none;
     margin-right: 10px;
     color: #dddddd;
-   
+
 }
 
-.legal-pages{
-     margin-bottom: 5px;
-} 
+.legal-pages {
+    margin-bottom: 5px;
+}
+
+
+/* Mobile Layout */
+
+@media(max-width:520px) {
+
+    .nav-returns,
+    .nav-location,
+    .nav-language {
+        display: none;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .nav-search {
+        order: 1;
+    }
+
+    .nav-signin {
+        margin-left: 70px;
+    }
+
+    .panel-deals,
+    .panel-register,
+    .panel-service,
+    .panel-all {
+        display: none;
+    }
+
+    .panel-options {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .hero-section {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        height: 100%;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .footer-panel2 {
+        height: auto;
+
+        .make-money,
+        .payment-products {
+            display: none;
+        }
+       
+    }
+
+
+    .footer-panel2 ul {
+        margin: 20px 10px;
+
+    }
+    .footer-panel2 ul a{
+        font-size: 0.7rem;
+    }
+
+    .footer-panel3 {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .panel3-ops {
+        flex-wrap: wrap;
+        justify-content: center;
+
+       
+    }
+
+    .foot-logo {
+        display: none;
+    }
+
+    .foot{
+        width: 35%; 
+    }
+
+    .panel3-lang{
+        margin-right: 70px;
+    }
+
  
+    .footer-panel4{
+        font-size: 0.75rem; 
+        padding: 10px;
+    }
+
+    .legal-pages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px; 
+    }
+    .legal-pages a{
+        padding: 4px 2px;
+    }
+}
+
+/* Tablet Layout */
+
+@media (min-width:520px) and (max-width:900px) {
+    .box {
+        width: 48%;
+    }
+}
