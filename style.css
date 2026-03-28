@@ -403,7 +403,7 @@ footer {
 
 /* Mobile Layout */
 
-@media(max-width:520px) {
+@media(max-width:600px) {
 
     .nav-returns,
     .nav-location,
@@ -418,9 +418,6 @@ footer {
 
     .nav-search {
         width: 100%;
-    }
-
-    .nav-search {
         order: 1;
     }
 
@@ -465,7 +462,7 @@ footer {
         .payment-products {
             display: none;
         }
-       
+
     }
 
 
@@ -473,7 +470,8 @@ footer {
         margin: 20px 10px;
 
     }
-    .footer-panel2 ul a{
+
+    .footer-panel2 ul a {
         font-size: 0.7rem;
     }
 
@@ -487,24 +485,24 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
 
-       
+
     }
 
     .foot-logo {
         display: none;
     }
 
-    .foot{
-        width: 35%; 
+    .foot {
+        width: 35%;
     }
 
-    .panel3-lang{
+    .panel3-lang {
         margin-right: 70px;
     }
 
- 
-    .footer-panel4{
-        font-size: 0.75rem; 
+
+    .footer-panel4 {
+        font-size: 0.75rem;
         padding: 10px;
     }
 
@@ -512,17 +510,89 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0px; 
+        margin: 0px;
     }
-    .legal-pages a{
+
+    .legal-pages a {
         padding: 4px 2px;
     }
+
+
 }
 
 /* Tablet Layout */
 
-@media (min-width:520px) and (max-width:900px) {
+@media (min-width:600px) and (max-width:900px) {
     .box {
         width: 48%;
     }
+
+    .make-money {
+        display: none;
+    }
+
+    .nav-location,
+    .nav-language {
+        display: none;
+    }
+
+    .nav-search {
+        /* display: block; */
+        order: 1;
+        width: 100%;
+
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .nav-signin {
+        margin-left: 200px;
+    }
+
+    .footer-panel2 {
+        height: auto;
+
+        .make-money {
+            display: none;
+        }
+
+    }
+ 
+    .panel-deals{
+        display: none;
+    }
+
+    .footer-panel2 ul{ 
+        margin: 30px 5px;
+    }
+
+}
+
+@media (min-width:900px) and (max-width:1400px) {
+
+    .nav-location,
+    .nav-language {
+        display: none;
+    }
+
+    .nav-search {
+        width: 60%;
+    }
+
+    .footer-panel2 {
+        height: auto;
+
+        .make-money {
+            display: none;
+        }
+
+    }
+
+    .box{
+        width: 32%;
+    }
+
 }
